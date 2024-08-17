@@ -37,7 +37,7 @@ const TechStack = () => {
       <motion.div
         className="relative z-30 flex flex-col gap-11"
         style={{
-          scale: techStackScale,
+          scale: window.innerWidth > 300 ? techStackScale : 1,
           opacity: techStackOpacity,
           y: techStackPosition,
         }}
