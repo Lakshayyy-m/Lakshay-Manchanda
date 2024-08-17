@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="grow self-start sm:ps-5 max-sm:px-2 w-full">
         <div className="text-8xl font-bold max-md:text-6xl max-sm:text-5xl max-sm:w-screen max-sm:flex max-sm:justify-between">
           Lakshay
-          <span className="sm:hidden relative text-stone-300 text-xl font-normal ps-3 max-md:text-base max-sm:text-xs text-nowrap">
+          <span className="sm:hidden relative text-stone-300 text-xl font-normal max-md:text-base max-sm:text-xs text-nowrap">
             Full-stack <br /> Developer
           </span>
         </div>
