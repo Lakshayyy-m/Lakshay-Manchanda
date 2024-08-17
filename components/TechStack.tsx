@@ -11,6 +11,11 @@ const TechStack = () => {
     offset: ["end start"],
   });
 
+  let innerWidth = 500;
+
+  if (typeof window !== "undefined") {
+    innerWidth = window.innerWidth;
+  }
   const techStackScale = useTransform(
     scrollY,
     [500, 600, 700, 800, 900, 1000],
@@ -37,7 +42,7 @@ const TechStack = () => {
       <motion.div
         className="relative z-30 flex flex-col gap-11"
         style={{
-          scale: window.innerWidth > 300 ? techStackScale : 1,
+          scale: innerWidth > 300 ? techStackScale : 1,
           opacity: techStackOpacity,
           y: techStackPosition,
         }}
