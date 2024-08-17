@@ -12,10 +12,10 @@ const Projects = () => {
     await sleep();
     router.push("/projects");
     await sleep();
-    cover.style.top = "-100vh";
+    cover.style.top = "-200vh";
     await sleep();
     cover.style.display = "none";
-    cover.style.top = "100vh";
+    cover.style.top = "200vh";
     await sleep();
     cover.style.display = "flex";
   };
