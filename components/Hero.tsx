@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
             <div className="flex gap-5 ms-10">
               <Link
-                href={"https://wa.me/918920277767"}
+                href={"https://wa.me/16046213916"}
                 target="_blank"
                 className="hover:bg-white border border-white py-2 px-10 rounded-full group transition-colors"
               >
