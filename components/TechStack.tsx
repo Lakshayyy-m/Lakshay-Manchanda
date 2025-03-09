@@ -1,5 +1,5 @@
 "use client";
-import Spline from "@splinetool/react-spline";
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
 import { Loader } from "lucide-react";
 import React, { Suspense, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";

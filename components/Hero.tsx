@@ -1,7 +1,8 @@
 "use client";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
 import { Github, Linkedin, Loader, Mail } from "lucide-react";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
@@ -9,7 +10,6 @@ import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 const Hero = () => {
   const { scrollY } = useScroll();
-
   const textPosition = useTransform(
     scrollY,
     [0, 100, 150, 200, 250, 300, 350],
